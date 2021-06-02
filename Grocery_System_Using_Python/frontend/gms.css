@@ -1,0 +1,82 @@
+body{
+	background-image: url("https://mb.cision.com/Public/14078/2897370/a5e7f4a4c21c2eae_800x800ar.jpg");
+	background-size: cover;
+	padding-top: 0;
+    }
+.a{
+	background-color: #266150;
+	color:white;
+	opacity: 0.9;
+}
+#groce{
+	color:white;
+	text-decoration: none;
+	text-shadow: 2px 2px 5px white;
+	font-style: oblique;
+	font-size: 21px;
+	font-weight: bold;
+	animation: mymove 5s infinite;
+}
+@keyframes mymove{
+	from {color:white;}
+     to {color:#de5499;}
+}
+
+#nav{
+	background-color:rgb(0, 37, 131);
+	opacity: 0.9;
+
+}
+#nav:hover{
+	opacity: 1;
+}
+.navbar-toggle{
+	background-color: white;
+}
+
+#mor{
+	color:white;
+
+	}
+#mor:hover{
+	background-color:#266150;
+	font-size: 18px;
+}
+#ab{
+	color:white; 
+}
+#ab:hover{
+	background-color:#266150;
+	font-size: 18px;
+}
+#ho{
+	color:white;
+
+}
+#ho:hover{
+	background-color:#266150;
+	font-size: 18px;
+}
+#tr:nth-child(even){
+	background-color: #E8CEBF;
+	color:black;
+	opacity: 0.9;
+}
+#tr:nth-child(odd){
+	background-color:#DDAF94;
+	color:black;
+	opacity: 0.9;
+}
+#tr:hover{
+	background-color:white;
+	opacity:1;
+	font-size: 17px;
+
+}
+#pro{
+	font-weight: bold;
+	color:  #141850;
+	font-family: Brush Script MT;
+	font-size: 50px;
+	opacity: 1;
+}	

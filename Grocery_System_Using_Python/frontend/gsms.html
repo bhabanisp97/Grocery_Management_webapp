@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+   <meta charset="utf-8"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grocery Store Management System</title>
+  <link href="https://www.pngitem.com/pimgs/m/187-1872188_red-shopping-cart-png-transparent-png.png" rel="icon" type="image/ico">
+  <link media="all" type="text/css" rel="stylesheet" href=".\gms.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body class="tooltips">
+	<div class="container">
+		<nav class="navbar " id="nav">
+            <div class="container-fluid">
+		     <div class="navbar-header">
+		           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		            <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+                   </button>
+                <a class="navbar-brand " href=".\gsms.html"><span class="glyphicon glyphicon-shopping-cart" id="groce">GroceryHub</span></a>
+            </div>
+		        <div class="collapse navbar-collapse" id="myNavbar">
+		    	    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href=".\gsms.html" class="glyphicon glyphicon-home" title="Home" id="ho"></a></li>
+                        <li class="dropdown">
+                    	   <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="mor">more option
+                    		<span class="caret"></span></a>
+                    		<ul class="dropdown-menu">
+                    			<li id="or"><a href=".\order.html" title="Orders">Orders <span class="glyphicon glyphicon-th-large"></span></a></li>
+                            </ul>
+                         </li>
+                         <li><a href=".\About.html" id="ab">About</a></li>
+                    </ul>
+               </div>
+	      </div>
+     </nav>
+		<div class="right content-page" >
+            <div class="body content rows scroll-y">
+            	<div class="box-info full" id="taskFormContainer">
+		            <h2 id="pro">Products</h2>
+		             <div class="panel-body pt-0" >
+                        <div class="row mb-4">
+                             <div class="col-sm-12">
+		            	        <button input type="button" class="btn btn-info pull-right" data-toggle="modal" data-target="#productModal">Add New Product
+		            	        </button>
+		                    </div>
+		                </div>
+		                <table class="table table-hover">
+							<thead class="a">
+  		                        <th>Name</th>
+                                 <th>Unit</th>
+                                 <th>Price Per Unit</th>
+  		                         <th style="width: 150px">Action</th>
+							</thead>
+							<tbody id="ta">
+
+							</tbody >
+                        </table>
+                   </div>
+               </div>
+           </div>
+        </div>
+<div class="modal fade" id="productModal" role="dialog" data-backdrop="static">
+	<div class="modal-dialog ">
+		<div class="modal-content">
+			<div class="modal-header">
+		        <h4 class="modal-title">Add New Product</h4>
+	        </div>
+	    <div class="modal-body">
+		<form id="newproductForm">
+			<input type="hidden" name="id" id="id" value="0">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="form-group">
+						<lable for="name">Product</lable>
+						<input type="text" name="name" id="name" value="" placeholder="Product Name" class="form-control">
+					</div>
+				</div>
+				<div class="col-lg-12">
+					<div class="form-group">
+						<label for="unit"> Unit</label>
+						<select name="unit" id="unit" class="form-control">
+                             <option value=" ">Select</option>
+							 <option value="1">kg</option>
+                             <option value="2">each</option>
+                             <option value="3">litre</option>
+                             <option value="4">packet</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-lg-12">
+					  <div class="form-group">
+						   <lable for="price">Price per Unit</lable>
+						   <input typr="number" name="price" id="price" placeholder="Price" class="form-control">
+					  </div>
+				   </div>
+				</div>
+			</form>
+		</div>
+	    <div class="modal-footer">
+		     <button  class="btn btn-primary" type="button" data-dismiss="modal">
+			 Close
+		     </button>
+		    <button  type="button"  class="btn btn-success" id="prosave" onclick="alert('The item is add into your Reposetory')" >save</button>
+	    </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src=".\manage_product.js"></script>
+<script src=".\a.js"></script>
+</body>
+</html>
