@@ -11,9 +11,9 @@ it has Features like add item, Delete Item, placed an Order, removed an order.
 ![neworders](https://user-images.githubusercontent.com/54018688/120812022-75631900-c501-11eb-87ee-c0ba5f18c560.png)
 
 ## Features
-*Powerful Dashboard Which shows the Product Details
-*Add a Products to the database
-*Delete a product from the database
-*View Orders
-*Place an order
-*Delete an order
+* Powerful Dashboard Which shows the Product Details
+* Add a Products to the database
+* Delete a product from the database
+* View Orders
+* Place an order
+* Delete an order
